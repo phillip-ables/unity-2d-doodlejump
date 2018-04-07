@@ -5,7 +5,8 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
     public Transform target;
-    public float smoothSpeed = .3f;
+
+    private Vector3 currentVelocity;
 
     //updates later than a normal update method, move char and then camera, no mixing b ack and forth
     void LateUpdate()
@@ -13,7 +14,7 @@ public class CameraFollow : MonoBehaviour {
         if (target.position.y > transform.position.y)
         {
             Vector3 newPos = new Vector3(transform.position.x, target.position.y, transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, newPos, smoothSpeed);
+            transform.position = newPos;
         }
     }
 }
