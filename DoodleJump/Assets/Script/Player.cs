@@ -2,17 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D))]//theres is always going to be a rigidbody along with the script
 public class Player : MonoBehaviour {
+    public float movement = 0f;
+
     Rigidbody2D rb;
 
-	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
-		
+        movement = Input.GetAxis("Horizontal");
 	}
+
+    //you dont want to do movement in update
+    void FixedUpdate()
+    {
+        Vector2 velocity = rb.velocity;
+        velocity.x = movement;
+        rb.velocity = velocity;
+    }
 }
