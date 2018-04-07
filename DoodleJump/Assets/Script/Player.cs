@@ -4,16 +4,17 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]//theres is always going to be a rigidbody along with the script
 public class Player : MonoBehaviour {
-    public float movement = 0f;
+    public float movementSpeed = 10f;
 
     Rigidbody2D rb;
+    float movement = 0f;
 
-	void Start () {
+    void Start () {
         rb = GetComponent<Rigidbody2D>();
 	}
 	
 	void Update () {
-        movement = Input.GetAxis("Horizontal");
+        movement = Input.GetAxis("Horizontal") * movementSpeed;
 	}
 
     //you dont want to do movement in update
