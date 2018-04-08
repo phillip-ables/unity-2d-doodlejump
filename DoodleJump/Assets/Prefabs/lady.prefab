@@ -9,71 +9,44 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1034903395215824}
+  m_RootGameObject: {fileID: 1703035326822974}
   m_IsPrefabParent: 1
---- !u!1 &1034903395215824
+--- !u!1 &1703035326822974
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4463404713185364}
-  - component: {fileID: 212195589978400558}
-  - component: {fileID: 61113387204382032}
-  - component: {fileID: 114440887021495818}
-  - component: {fileID: 251961823226925376}
+  - component: {fileID: 4866011690898042}
+  - component: {fileID: 212695836218909532}
+  - component: {fileID: 114270141618834758}
   m_Layer: 0
-  m_Name: Car
+  m_Name: lady
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4463404713185364
+--- !u!4 &4866011690898042
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034903395215824}
+  m_GameObject: {fileID: 1703035326822974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.32, z: 0}
+  m_LocalPosition: {x: -1.1993407, y: 0.7982064, z: -0.072265625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61113387204382032
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034903395215824}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.05259788, y: -0.18095964}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.46, y: 1.8}
-    newSize: {x: 5.46, y: 1.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 1
-  serializedVersion: 2
-  m_Size: {x: 4.302849, y: 1.4380807}
-  m_EdgeRadius: 0
---- !u!114 &114440887021495818
+--- !u!114 &114270141618834758
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034903395215824}
+  m_GameObject: {fileID: 1703035326822974}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cbb1e3fc3591e3c418c4cf9dfdd251c9, type: 3}
@@ -82,13 +55,13 @@ MonoBehaviour:
   crushed: {fileID: 21300000, guid: 430f5216338220f42862a4fa5b315128, type: 3}
   jump: {fileID: 21300000, guid: 7c75aecb6f8207d41b309121105243ec, type: 3}
   stand: {fileID: 21300000, guid: f2b411e50a5c9a64cb358c0d61742c51, type: 3}
-  car: {fileID: 21300000, guid: 71637296bd3be36448a1a7d1514ae327, type: 3}
---- !u!212 &212195589978400558
+  car: {fileID: 21300000, guid: 726db23c6d5ce51439804c144728a1c4, type: 3}
+--- !u!212 &212695836218909532
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034903395215824}
+  m_GameObject: {fileID: 1703035326822974}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -116,32 +89,14 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
-  m_Sprite: {fileID: 21300000, guid: 71637296bd3be36448a1a7d1514ae327, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 726db23c6d5ce51439804c144728a1c4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.46, y: 1.8}
+  m_Size: {x: 4.6, y: 4.56}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!251 &251961823226925376
-PlatformEffector2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1034903395215824}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1

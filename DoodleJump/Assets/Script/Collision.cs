@@ -35,7 +35,6 @@ public class Collision : MonoBehaviour {
                 rb.velocity = velocity;
             }
             StartCoroutine("SpriteChangeDelay", collision);
-            //if (collision.gameObject.transform.position.y != 0)
         }
         
     }

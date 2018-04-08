@@ -222,7 +222,10 @@
   <ItemGroup>
     <Compile Include="Assets\Script\CameraFollow.cs" />
     <Compile Include="Assets\Script\Collision.cs" />
+    <Compile Include="Assets\Script\FollowPlayer.cs" />
     <Compile Include="Assets\Script\LevelGenerator.cs" />
+    <Compile Include="Assets\Script\Maker.cs" />
+    <Compile Include="Assets\Script\Man.cs" />
     <Compile Include="Assets\Script\PlatformScript.cs" />
     <Compile Include="Assets\Script\Player.cs" />
   </ItemGroup>
