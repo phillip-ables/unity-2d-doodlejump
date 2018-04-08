@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Lvl1.unity
+- path: Assets/Scenes/Mine.unity
   isLoaded: 1
   isActive: 1
