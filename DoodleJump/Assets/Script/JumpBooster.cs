@@ -1,16 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class JumpBooster : MonoBehaviour {
+    public float boostedJump = 20f;
+    private Rigidbody2D person2D;
 
-	// Use this for initialization
-	void Start () {
+    void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.relativeVelocity.y < 0)
+        {
+            Debug.Log("Colliding from above!!!");
+        }
+    }
 }
