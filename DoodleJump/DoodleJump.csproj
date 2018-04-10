@@ -223,6 +223,7 @@
     <Compile Include="Assets\Script\CameraFollow.cs" />
     <Compile Include="Assets\Script\Collision.cs" />
     <Compile Include="Assets\Script\FollowPlayer.cs" />
+    <Compile Include="Assets\Script\JumpBooster.cs" />
     <Compile Include="Assets\Script\LevelGenerator.cs" />
     <Compile Include="Assets\Script\Maker.cs" />
     <Compile Include="Assets\Script\Man.cs" />

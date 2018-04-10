@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour {
 
@@ -19,6 +17,7 @@ public class LevelGenerator : MonoBehaviour {
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);
             Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
         }
+        Instantiate(platformPrefab, new Vector3(0, -2, 0), Quaternion.identity);
     }
 	
 	// Update is called once per frame
