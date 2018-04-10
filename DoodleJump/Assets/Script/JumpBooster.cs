@@ -2,7 +2,6 @@
 
 public class JumpBooster : MonoBehaviour {
     public float boostedJump = 20f;
-    private Rigidbody2D person2D;
 
     void Start () {
 		
@@ -12,7 +11,13 @@ public class JumpBooster : MonoBehaviour {
     {
         if(collision.relativeVelocity.y < 0)
         {
-            Debug.Log("Colliding from above!!!");
+            Rigidbody2D person2D = collision.collider.GetComponent<Rigidbody2D>();
+            if(person2D != null)
+            {
+                Vector2 velocity = person2D.velocity;
+                velocity.y = boostedJump;
+                person2D.velocity = velocity;
+            }
         }
     }
 }
