@@ -3,6 +3,8 @@
 public class LevelGenerator : MonoBehaviour {
 
     public GameObject platformPrefab;
+    public GameObject jumpBoosterPrefab;
+    public GameObject hollowPrefab;
 
     public int numberOfPlatforms = 200;
     public float levelWidth = 3f;
