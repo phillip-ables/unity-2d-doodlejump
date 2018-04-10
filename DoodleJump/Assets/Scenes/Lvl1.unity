@@ -439,7 +439,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9abe28639f717ec4b9c3b4e099eadc30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  platformPrefab: {fileID: 0}
+  platformPrefab: {fileID: 1735271015528184, guid: 126658d8dc4c696459c57c9027d7932d,
+    type: 2}
+  jumpBoosterPrefab: {fileID: 1627351718742202, guid: 9649df8c640135945884dc8ac3e6b350,
+    type: 2}
+  badPrefab: {fileID: 1014123204821846, guid: b634d0ce54b37ea4783513fbfffa925d, type: 2}
   numberOfPlatforms: 200
   levelWidth: 5
   minY: 0.4
