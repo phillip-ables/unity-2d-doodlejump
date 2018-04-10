@@ -17,13 +17,21 @@ public class LevelGenerator : MonoBehaviour {
         {
             spawnPosition.y += Random.Range(minY, maxY);
             spawnPosition.x = Random.Range(-levelWidth, levelWidth);
-            Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+            if(i%10 == 0)
+            {
+                Instantiate(jumpBoosterPrefab, spawnPosition, Quaternion.identity);
+            }else if(i%3 == 0)
+            {
+                hollowPrefab.transform.Rotate(new Vector3(180, 0, 0));
+                hollowPrefab.GetComponent<Collider2D>().enabled = false;
+                Instantiate(hollowPrefab, spawnPosition, Quaternion.identity);
+            }
+            else
+            {
+                Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
+
+            }
         }
         Instantiate(platformPrefab, new Vector3(0, -2, 0), Quaternion.identity);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
